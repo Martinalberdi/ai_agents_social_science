@@ -3,23 +3,24 @@
 **Martin Alberdi · Online, Zoom**
 **10, 12, 17, and 19 November 2026 · 15:30–18:00 EET**
 
-## Before session 2 (Thursday 12 November)
+## Before session 3 (Tuesday 17 November)
 
-Follow the one-page [setup guide](setup_before_session_2.pdf) and complete its five steps. Allow up to 90 minutes, and do not leave it to Thursday morning.
+Choose your own descriptive question, find public data, and make one figure with the agent. Follow the one-page [instructions](before_session_3.pdf). I have no expectations on time: a short version is fine.
 
-The guide replaces the setup instructions in the syllabus. You do not need Git, Node.js, Gemini CLI, or an API key.
+Post your slide in the [class gallery](https://docs.google.com/presentation/d/131BR3vd_gnyZKuBR2Li0hI1mpUk83nF5LGRH0Bunwtw/edit) by **Tuesday 17 November, 10:00 EET**. Write one sentence per box.
 
-If a step fails, email martin.alberdi@eui.eu the **step number** and a **screenshot** by **Wednesday 11 November, 18:00**. Make sure the screenshot shows no passwords. If the problem cannot be solved in time, you can work in a pair on Thursday.
+Stuck? First ask the agent to explain the error in simple words. Still stuck? Write it in the box "Where I got stuck" on your slide, or email martin.alberdi@eui.eu a screenshot by **Sunday 15 November, 18:00**.
 
 ## What is in this folder
 
 | Item | What it is |
 | --- | --- |
+| [`before_session_3.pdf`](before_session_3.pdf) | Your own project, before session 3. |
 | [`setup_before_session_2.pdf`](setup_before_session_2.pdf) | What to install and check before session 2. |
 | [`syllabus_programme_2026_ai_agents.pdf`](syllabus_programme_2026_ai_agents.pdf) | The course syllabus. |
 | [`GLOSSARY.md`](GLOSSARY.md) | Every new word from the slides, in plain language. |
 | [`RESOURCES.md`](RESOURCES.md) | The optional links that the slides point to. |
-| [`slides/`](slides/) | The slides for each session. Session 1 is there now. |
+| [`slides/`](slides/) | The slides for each session. Sessions 1 and 2 are there now. |
 | [`youth_at_home_project/`](youth_at_home_project/) | The practice project we work on. In VS Code, open this folder, not the whole course folder. |
 
 Materials for later sessions will be added here. If you download the course folder again, save the new copy in a separate place so that it does not overwrite your work.
