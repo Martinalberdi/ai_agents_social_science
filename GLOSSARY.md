@@ -1,6 +1,6 @@
 # Course glossary
 
-Every new word from the slides, in plain language, in the order the course introduces it. The glossary grows after each session.
+Every new word from the slides, in plain language, in the order the course introduces it. It covers all four sessions.
 
 ## Session 1
 
@@ -70,3 +70,47 @@ Every new word from the slides, in plain language, in the order the course intro
 | **Missing value** | An observation for which no value exists. In Eurostat files, often simply a missing row. |
 | **Flag** | Eurostat's warning letter on a value: `b` break in series, `e` estimated, `p` provisional. |
 | **Supervision log** | Your own record of what you asked the agent, what you approved or changed, and what you checked. |
+
+## Session 3
+
+| Term | Meaning |
+| --- | --- |
+| **Original source** | The organisation that collected or calculated the numbers. A website that repeats them is a copy. |
+| **Sample size (n)** | The number of people behind a number. With a small n, the number can change a lot by chance. |
+| **Pipeline** | A chain of scripts, each doing one step, from raw data to results. Run them in order, and you get the same results again. |
+
+**The five habits** (Session 3, from your own projects):
+
+| Habit | In one sentence |
+| --- | --- |
+| **1. Who made the numbers** | When the agent proposes a source, I open it and find who made the numbers. |
+| **2. Read one number** | Before I use a figure, I read one number aloud: who, where, when, unit, how many. |
+| **3. Which script** | When I see a number, I ask which script made it. |
+| **4. Write it once** | When I decide something, I write it once, in the instruction file. |
+| **5. Clear the desk** | When the agent fails twice, I clear the desk and ask for a smaller step. |
+
+## Session 4
+
+| Term | Meaning |
+| --- | --- |
+| **Dictation tool** | A program that turns your speech into written text, in any text box. It is not an agent: it only types for you. Example: Wispr Flow. |
+| **Workflow** | A fixed list of steps that runs in the same order every time. You decide the steps. Some steps are scripts. Some steps are done by agents. |
+| **Lead agent** | The agent that divides the work, gives each task to a helper agent, and puts the results together. |
+| **Helper agent (subagent)** | An agent that another agent starts for one job. It starts with a clean desk: it sees only its task, its own instructions and its own skills, not the conversation. |
+| **Orchestration** | The work of the lead agent: it divides the work among helper agents and combines the results. |
+| **Deep research** | A mode in chat apps (Gemini, ChatGPT, Claude): many web searches for several minutes, then a long report with links. |
+| **MCP server** | The small program that an application offers to agents (see **MCP** in Session 2). It lists what the agent may ask, for example "search my meetings", and does it when asked. You need one for private things, not for public web pages. |
+| **Prompt injection** | Instructions hidden inside material that the agent reads (a web page, a PDF, an email, a data file). They try to make the agent do something you did not ask for. |
+| **Structured output** | An answer in a fixed format, such as a table with fixed columns, instead of free text. A program can check it, combine it and compare it. |
+| **Labour force** | People who work or look for work. Students who do not look for work are not in it. |
+| **Youth unemployment rate** | Unemployed young people as a share of young people in the labour force. The **youth unemployment ratio** is a share of all young people. |
+| **Hallucination** | Something an LLM writes that sounds right but is false, for example a reference to an article that does not exist. |
+| **DOI (digital object identifier)** | A permanent ID for a publication. Free databases such as Crossref show which publication it belongs to. |
+| **Evals (evaluations)** | Test cases with known right answers. You run them after every change to a skill or an agent, and you get a score. |
+| **Prose** | Normal text in sentences and paragraphs, as in a memo or a brief. |
+| **Skill** | A folder with instructions for one kind of task (a file called `SKILL.md`), sometimes with templates or scripts. The agent reads it only when the task needs it. |
+| **Human review (human in the loop)** | A planned stop where the workflow waits for a person to read, change and approve the work before it goes on. |
+| **Tracing (trace)** | A record of every step of a workflow: which agent, which tool, which file or website, and when. |
+| **AI-use statement** | A short paragraph that says what AI did in a piece of work, and what the person checked and decided. |
+| **Guardrails** | Rules and checks around an agent that stop what must never happen. They work before, during or after a step. Most are locks, not polite signs. |
+| **Hook (automatic check)** | A small program that the harness runs every time an event happens, for example after a file is saved. The agent cannot skip it. |

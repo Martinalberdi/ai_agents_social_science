@@ -1,29 +1,63 @@
 # AI Agents for Descriptive Social-Science Research
 
 **Martin Alberdi · Online, Zoom**
-**10, 12, 17, and 19 November 2026 · 15:30–18:00 EET**
+**10, 12, 17 and 19 November 2026 · 15:30–18:00 EET**
 
-## Before session 3 (Tuesday 17 November)
+The course is finished. Thank you for four sessions. Everything stays in this folder: the slides, the two practice projects, the instructions, and the new words. It was a pleasure. Let us keep in touch: martin.alberdi@eui.eu.
 
-Choose your own descriptive question, find public data, and make one figure with the agent. Follow the one-page [instructions](before_session_3.pdf). I have no expectations on time: a short version is fine.
+## Where to start
 
-Post your slide in the [class gallery](https://docs.google.com/presentation/d/131BR3vd_gnyZKuBR2Li0hI1mpUk83nF5LGRH0Bunwtw/edit) by **Tuesday 17 November, 10:00 EET**. Write one sentence per box.
+1. **Run the Session 4 workflow yourself, in Antigravity.** Follow [`instructions/antigravity_map.pdf`](instructions/antigravity_map.pdf). It takes about 60–90 minutes and needs no paid plan. The steps are summarised below.
+2. **Use the five habits in every project.** Copy the skills in [`user_level_skills/`](user_level_skills/) to your computer (step 9 of the instructions).
+3. **Look back at the slides** in [`slides/`](slides/). New words are explained in [`GLOSSARY.md`](GLOSSARY.md). Optional links, and what to read next, are in [`RESOURCES.md`](RESOURCES.md).
 
-Stuck? First ask the agent to explain the error in simple words. Still stuck? Write it in the box "Where I got stuck" on your slide, or email martin.alberdi@eui.eu a screenshot by **Sunday 15 November, 18:00**.
+## After the course: the monthly brief in Antigravity
+
+In Session 4 we built one workflow that finds sources, checks facts and writes a memo and a brief. In class, it ran in Claude Code. The project folder [`monthly_youth_brief/`](monthly_youth_brief/) now contains the same pieces for Antigravity too, so you do not need to move any files.
+
+- **What you need:** VS Code with the Antigravity extension and Python, as installed before Session 2. R is optional: the tables in `outputs/` are already made.
+- **What is different in VS Code:** Antigravity in VS Code reads the instruction file and the skills, but it cannot start helper agents. So you run the steps one at a time, and you open a new conversation for each check (a clean desk). Helper agents work in the free Antigravity app (optional, step 8 of the instructions).
+- **How long:** about 60–90 minutes. A short version (steps 1 to 5) takes about 30 minutes.
+
+**Steps (details in the PDF):**
+
+1. Get a fresh copy of the project: download the course folder again (green **Code** button ➜ **Download ZIP**), copy `monthly_youth_brief/` into Documents (not OneDrive, Dropbox or iCloud), and open it in VS Code.
+2. Ask Antigravity which instruction file and skills it can see.
+3. The request and the data (R is optional: the tables are already made).
+4. Find sources for one country, with the find-sources skill.
+5. Check the seven test claims, in a new conversation.
+6. Write the memo and the brief, then run the number check.
+7. The second check, in a new conversation, and your own review.
+8. Optional: the whole workflow in one command, in the free Antigravity app, with helper agents.
+9. Optional: the five habits in every project (`user_level_skills/`).
+
+**You are the supervisor.** Plan first. Allow each request this time only. Never allow the agent to read `evals/answer_key.csv`: only the script `scripts/score_evals.py` reads it.
+
+**Stuck?** First ask the agent: "Explain this error in simple words." Still stuck? Email martin.alberdi@eui.eu the step number and a screenshot.
+
+**Using Claude Code instead?** Open `monthly_youth_brief/` in Claude Code and type `/monthly-brief`. The folder `.claude/` holds the version we ran in class, with its locks and automatic checks. Claude Code needs a paid plan.
 
 ## What is in this folder
 
 | Item | What it is |
 | --- | --- |
-| [`before_session_3.pdf`](before_session_3.pdf) | Your own project, before session 3. |
-| [`setup_before_session_2.pdf`](setup_before_session_2.pdf) | What to install and check before session 2. |
+| [`slides/`](slides/) | The slides of all four sessions. |
+| [`instructions/`](instructions/) | Step-by-step instructions: setup before Session 2, your own project before Session 3, and Session 4 in Antigravity. |
+| [`youth_at_home_project/`](youth_at_home_project/) | The practice project from Sessions 2 and 3: young adults living with their parents. |
+| [`monthly_youth_brief/`](monthly_youth_brief/) | The Session 4 project: one workflow that finds sources, checks facts and writes a memo and a brief. For Antigravity and Claude Code. |
+| [`user_level_skills/`](user_level_skills/) | The five habits from Session 3, as skills, and one command that runs three of them. |
+| [`GLOSSARY.md`](GLOSSARY.md) | Every new word from the slides, in plain language, session by session. |
+| [`RESOURCES.md`](RESOURCES.md) | The optional links the slides point to, and what to read next. |
 | [`syllabus_programme_2026_ai_agents.pdf`](syllabus_programme_2026_ai_agents.pdf) | The course syllabus. |
-| [`GLOSSARY.md`](GLOSSARY.md) | Every new word from the slides, in plain language. |
-| [`RESOURCES.md`](RESOURCES.md) | The optional links that the slides point to. |
-| [`slides/`](slides/) | The slides for each session. Sessions 1 and 2 are there now. |
-| [`youth_at_home_project/`](youth_at_home_project/) | The practice project we work on. In VS Code, open this folder, not the whole course folder. |
 
-Materials for later sessions will be added here. If you download the course folder again, save the new copy in a separate place so that it does not overwrite your work.
+## The four sessions
+
+| Session | Date | Slides | Instructions |
+| --- | --- | --- | --- |
+| 1. Getting started | 10 November | [session1_getting_started.pdf](slides/session1_getting_started.pdf) | [Setup before Session 2](instructions/setup_before_session_2.pdf) |
+| 2. Using agents | 12 November | [session2_using_agents.pdf](slides/session2_using_agents.pdf) | [Your own project, before Session 3](instructions/before_session_3.pdf) |
+| 3. Five habits from your projects | 17 November | [session3_supervising_your_project.pdf](slides/session3_supervising_your_project.pdf) | The five habits: [`user_level_skills/`](user_level_skills/) |
+| 4. One workflow to find, check and write | 19 November | [session4_one_workflow.pdf](slides/session4_one_workflow.pdf) | [Session 4 in Antigravity](instructions/antigravity_map.pdf) |
 
 ## Optional background reading
 
@@ -37,3 +71,5 @@ Paul Goldsmith-Pinkham's series *Claude Code for Economists* shows realistic res
 6. [Skills: Specifying How an Agent Should Think](https://paulgp.substack.com/p/skills-specifying-how-an-agent-should)
 7. [Permissions, Sandboxes, and Autonomous Agents](https://paulgp.substack.com/p/permissions-sandboxes-and-autonomous)
 8. [Integration and Collaboration in AI Research Work](https://paulgp.substack.com/p/integration-and-collaboration-in)
+
+What to read next, after the course, is at the end of [`RESOURCES.md`](RESOURCES.md). A good start: Chris Blattman's [two-month plan](https://claudeblattman.com/starter-kit/two-month-plan/) for researchers who want to keep going.
