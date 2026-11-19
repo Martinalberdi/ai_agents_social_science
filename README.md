@@ -7,29 +7,29 @@ The course is finished. Thank you for four sessions. Everything stays in this fo
 
 ## Where to start
 
-1. **Run the Session 4 workflow yourself, in Antigravity.** Follow [`instructions/antigravity_map.pdf`](instructions/antigravity_map.pdf). It takes about 60–90 minutes and needs no paid plan. The steps are summarised below.
-2. **Use the five habits in every project.** Copy the skills in [`user_level_skills/`](user_level_skills/) to your computer (step 9 of the instructions).
+1. **Run the Session 4 workflow yourself, in Antigravity.** One command in the Antigravity app, or step by step in VS Code. Follow [`instructions/antigravity_map.pdf`](instructions/antigravity_map.pdf). No paid plan is needed. The steps are summarised below.
+2. **Use the five habits in every project.** Copy the skills in [`user_level_skills/`](user_level_skills/) to your computer (step 8 of the instructions).
 3. **Look back at the slides** in [`slides/`](slides/). New words are explained in [`GLOSSARY.md`](GLOSSARY.md). Optional links, and what to read next, are in [`RESOURCES.md`](RESOURCES.md).
 
 ## After the course: the monthly brief in Antigravity
 
-In Session 4 we built one workflow that finds sources, checks facts and writes a memo and a brief. In class, it ran in Claude Code. The project folder [`monthly_youth_brief/`](monthly_youth_brief/) now contains the same pieces for Antigravity too, so you do not need to move any files.
+In Session 4 we built one workflow that finds sources, checks facts and writes a memo and a brief. In class, it ran in Claude Code. The project folder [`monthly_youth_brief/`](monthly_youth_brief/) now contains the same pieces for Antigravity too, so you do not need to move any files. You need the Antigravity app and the Antigravity extension in VS Code; R is optional.
 
-- **What you need:** VS Code with the Antigravity extension and Python, as installed before Session 2. R is optional: the tables in `outputs/` are already made.
-- **What is different in VS Code:** Antigravity in VS Code reads the instruction file and the skills, but it cannot start helper agents. So you run the steps one at a time, and you open a new conversation for each check (a clean desk). Helper agents work in the free Antigravity app (optional, step 8 of the instructions).
-- **How long:** about 60–90 minutes. A short version (steps 1 to 5) takes about 30 minutes.
+**Two ways (details in [`instructions/antigravity_map.pdf`](instructions/antigravity_map.pdf)):**
 
-**Steps (details in the PDF):**
+- **One command, in the Antigravity app.** Open `monthly_youth_brief/` in the app and type `/monthly-brief`. The lead agent starts helper agents and runs the whole workflow. It stops before anything is shared, and waits for your review.
+- **Step by step, in VS Code.** Antigravity in VS Code reads the same skills, but it cannot start helper agents. So you run each step yourself, with a new conversation for each check, as in class.
 
-1. Get a fresh copy of the project: download the course folder again (green **Code** button ➜ **Download ZIP**), copy `monthly_youth_brief/` into Documents (not OneDrive, Dropbox or iCloud), and open it in VS Code.
-2. Ask Antigravity which instruction file and skills it can see.
-3. The request and the data (R is optional: the tables are already made).
-4. Find sources for one country, with the find-sources skill.
-5. Check the seven test claims, in a new conversation.
+**Steps:**
+
+1. Get a fresh copy of the project: download the course folder again (green **Code** button ➜ **Download ZIP**), and copy `monthly_youth_brief/` into Documents (not OneDrive, Dropbox or iCloud).
+2. Open it in the Antigravity app, and ask which instruction file, skills and helper agents it can see.
+3. Run the whole workflow with one command: `/monthly-brief`.
+4. Or step by step in VS Code: the request and the data.
+5. Find sources for one country, then check the seven test claims.
 6. Write the memo and the brief, then run the number check.
 7. The second check, in a new conversation, and your own review.
-8. Optional: the whole workflow in one command, in the free Antigravity app, with helper agents.
-9. Optional: the five habits in every project (`user_level_skills/`).
+8. Optional: the five habits in every project (`user_level_skills/`).
 
 **You are the supervisor.** Plan first. Allow each request this time only. Never allow the agent to read `evals/answer_key.csv`: only the script `scripts/score_evals.py` reads it.
 
