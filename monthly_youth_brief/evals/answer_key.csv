@@ -1,0 +1,8 @@
+id,verdict,problem,explanation
+E1,supported,none,"EU1: EU27_2020, 2026-09, under 25, seasonally adjusted = 15.5."
+E2,not supported,rate vs share,"24.9 is the 2025 RATE for ages 15-24 (share of the labour force, EU2, flag d). The share of ALL young people (ratio, EU3) was 8.4: about one in twelve, not one in four."
+E3,supported,none,"EU1: Germany 7.5 in 2026-09 is the lowest of the ten countries (Netherlands 8.8, Czechia 8.9)."
+E4,not supported,wrong period,"EU1 has no value for Romania for 2026-09. 30.8 is the value for 2026-06, the latest available."
+E5,not supported,cause not in source,"The two numbers are right (EU1: 11.8 in 2026-08, 8.9 in 2026-09), but no source in docs/sources.csv gives a cause."
+E6,not supported,reference problem,"The DOI 10.1093/oxrep/grr008 belongs to another paper (Turner, 'The oil trading markets, 2003-10'). The right DOI is 10.1093/oxrep/grr011. Checked on Crossref, 17 Nov 2026."
+E7,supported,none,"EU1: Sweden 21.7 and Italy 19.9 in 2026-09."

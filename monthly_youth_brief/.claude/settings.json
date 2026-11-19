@@ -1,0 +1,66 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Rscript scripts/01_download_eurostat.R)",
+      "Bash(Rscript scripts/02_make_tables.R)",
+      "Bash(python3 scripts/check_columns.py:*)",
+      "Bash(python3 scripts/score_evals.py)",
+      "WebSearch",
+      "WebFetch(domain:ec.europa.eu)",
+      "WebFetch(domain:api.openalex.org)",
+      "WebFetch(domain:api.crossref.org)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:ilo.org)",
+      "WebFetch(domain:oecd.org)"
+    ],
+    "deny": [
+      "Read(./evals/answer_key.csv)",
+      "Edit(./data/raw/**)",
+      "Write(./data/raw/**)",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(git push:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/check_numbers.py\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/trace.py\""
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/trace.py\""
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/trace.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
